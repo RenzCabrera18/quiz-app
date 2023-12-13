@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quiz-app.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="quiz-logo.jpg" />
+  </head>
+  <body>
+    <!--this is the the start of the quiz-->
+    <div class="start-screen">
+      <button id="start-btn">Start</button>
+    </div>
+    <div id="display-container">
+      <div class="header">
+        <div class="number-of-count">
+          <span class="number-of-question">1 of 5 questions</span>
+        </div>
+        <div class="timer-div">
+          <img src="clock.png" alt="Timer" width="30px" />
+          <span class="time-left">10s</span>
+        </div>
+      </div>
+      <div id="container">
+        <!--question and options will be display here-->
+      </div>
+      <button id="next-btn">Next</button>
+    </div>
+    <div class="score-container hide">
+      <div id="user-score">Show Score</div>
+      <button id="restart">Restart Quiz</button>
+    </div>
+
+    <script src="quiz-app.js"></script>
+  </body>
+</html>
